@@ -26,11 +26,11 @@ describe('response-json', function () {
     var mockXhr = {
       responseText: 'wrong input'
     };
-    responseJSON(mockXhr).should.be.false;
+    (responseJSON(mockXhr) === null).should.be.true;
   });
 
   it('should return false if the argument is undefined', function () {
-    responseJSON().should.be.false;
+    (responseJSON() === null).should.be.true;
   });
 
 });
