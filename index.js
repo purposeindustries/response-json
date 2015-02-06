@@ -2,7 +2,7 @@
 
 module.exports = function (xhr) {
   if (!xhr) {
-    return false;
+    return null;
   }
   if (xhr.responseJSON) {
     return xhr.responseJSON;
@@ -10,6 +10,6 @@ module.exports = function (xhr) {
   try {
     return JSON.parse(xhr.responseText);
   } catch (x) {
-    return false;
+    return null;
   }
 };
