@@ -1,6 +1,6 @@
 'use strict';
 
-var responseJSON = require('../index.js');
+var responseJSON = require('..');
 
 describe('response-json', function () {
 
@@ -26,11 +26,15 @@ describe('response-json', function () {
     var mockXhr = {
       responseText: 'wrong input'
     };
+    /*eslint-disable no-unused-expressions*/
     (responseJSON(mockXhr) === null).should.be.true;
+    /*eslint-enable no-unused-expressions*/
   });
 
   it('should return false if the argument is undefined', function () {
+    /*eslint-disable no-unused-expressions*/
     (responseJSON() === null).should.be.true;
+    /*eslint-enable no-unused-expressions*/
   });
 
 });

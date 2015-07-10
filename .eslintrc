@@ -1,0 +1,12 @@
+{
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "describe": true,
+    "it"
+  },
+  "rules": {
+    "quotes": [2, "single", "avoid-escape"]
+  }
+}

@@ -1,18 +1,20 @@
 {
   "name": "response-json",
   "version": "1.0.0",
-  "description": "",
+  "description": "Attempts to get a json object back from an xhr object.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test"
+    "test": "npm run lint && mocha",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/purposeindustries/response-json"
   },
-  "author": "ruff",
-  "license": "ISC",
+  "author": "ruffle1986",
+  "license": "MIT",
   "devDependencies": {
+    "eslint": "^0.24.0",
     "mocha": "^2.1.0",
     "should": "^4.6.5"
   }
